@@ -19,7 +19,7 @@ llm:
 
 parallelization:
   stagger: 1.0
-  num_threads: 1
+  num_threads: 6
 
 async_mode: threaded # or asyncio
 
