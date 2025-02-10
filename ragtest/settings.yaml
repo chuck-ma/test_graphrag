@@ -9,10 +9,10 @@ encoding_model: cl100k_base # this needs to be matched to your model!
 llm:
   api_key: ${GRAPHRAG_API_KEY} # set this in the generated .env file
   type: openai_chat # or azure_openai_chat
-  model: deepseek-ai/DeepSeek-V3
-  model_supports_json: false
+  model: deepseek-v3
+  model_supports_json: true
   # audience: "https://cognitiveservices.azure.com/.default"
-  api_base: https://api.siliconflow.cn/v1
+  api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
   # api_version: 2024-02-15-preview
   # organization: <organization_id>
   # deployment_name: <azure_model_deployment_name>
@@ -33,8 +33,8 @@ embeddings:
   llm:
     api_key: ${GRAPHRAG_API_KEY}
     type: openai_embedding # or azure_openai_embedding
-    model: BAAI/bge-m3
-    api_base: https://api.siliconflow.cn/v1
+    model: text-embedding-v3
+    api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
     # api_version: 2024-02-15-preview
     # audience: "https://cognitiveservices.azure.com/.default"
     # organization: <organization_id>
